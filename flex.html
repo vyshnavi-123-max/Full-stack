@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        .container {
+            display: flex;/* Use flexbox for layout */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center;/* Center items horizontally */
+            gap: 20px; /* Space between items */
+            align-items: center;
+            height: 100vh;
+            flex-direction: row; /* Arrange items in a row */
+            padding: 20px; /* Add some padding around the container */
+        }
+        .box {
+            width: 200px;/* Set a fixed width for each box */
+            height: 200px;/* Set a fixed height for each box */
+            margin: 10px; /* Add some margin around each box */
+            background-color: coral;/* Set a background color for each box */
+            border-radius: 10px;/* Add rounded corners to each box */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+            display: flex;/* Use flexbox for centering content inside the box */
+            flex-direction: column; /* Arrange content vertically */
+            justify-content: center;/* Center content vertically */
+            align-items: center;/* Center content horizontally */
+            font-size: 24px;/* Set font size for text inside the box */
+            color: white;/* Set text color to white */
+            text-align: center;/* Center text inside the box */
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+        <div class="box" id="box5">Box 5</div> 
+    </div>
+</body>
+</html>

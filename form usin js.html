@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reset form</h1>
+    <h1>Submission form using Javascript</h1>
+    <form id="myform">
+        <input typr="text" id="textinput" placeholder="Type Something...." required>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <script>x
+        let form=document.getElementById("myform");
+        let input=document.getElementById("textinput");
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert("Form submitted with value: " + input.value);
+        });
+        form.addEventListener("reset", function() {
+            alert("Form has been reset");
+        });
+    </script>
+</body>
+</html>

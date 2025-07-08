@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Explore amazing travel destinations with our curated packages and top itineraries." />
+    <title>GlobeTrotter Travel Agency</title>
+  </head>
+  <body>
+    <h1>Explore Our Travel Destinations</h1>
+    <p>Join us on exciting journeys across the globe with travel packages tailored for everyone.</p>
+
+    <h2>Packages</h2>
+    <p>Choose from our carefully crafted packages to suit your travel style.</p>
+    <ul>
+      <li>
+        <a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a>
+      </li>
+      <li>
+        <a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a>
+      </li>
+    </ul>
+
+    <h2>Top Itineraries</h2>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Paris Eiffel Tower" />
+      </a>
+      <figcaption>Romantic Paris Getaway</figcaption>
+    </figure>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Safari in Africa" />
+      </a>
+      <figcaption>Adventure Safari in Kenya</figcaption>
+    </figure>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Tokyo city lights" />
+      </a>
+      <figcaption>Explore Tokyo’s Vibrant Culture</figcaption>
+    </figure>
+  </body>
+</html>

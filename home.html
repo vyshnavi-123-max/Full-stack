@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Guide Your Trip</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .featured {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .destination {
+            width: 300px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .destination img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .destination h3 {
+            margin: 10px 0;
+        }
+        .destination p {
+            font-size: 14px;
+            color: #555;
+        }
+        .destination button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .destination button:hover {
+            background-color: #0056b3;
+        }
+        .search-box {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-box input {
+            padding: 8px;
+            font-size: 16px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        .search-box button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .search-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guide Your Trip</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search destinations...">
+        <button onclick="searchDestination()">Search</button>
+    </div>
+    <div class="featured">
+        <!-- Leh Ladakh -->
+        <div class="destination">
+            <img src="ladakh.jpg" alt="Leh Ladakh">
+            <h3>Leh Ladakh</h3>
+            <p>Discover The Land of High Passes</p> 
+            <button onclick="window.location.href='ladakh.html'">Explore</button>
+        </div>
+        <!-- Coorg -->
+        <div class="destination">
+            <img src="coorg.jpg" alt="Coorg">
+            <h3>Coorg</h3>
+            <p>Discover The Scotland of India</p> 
+            <button onclick="window.location.href='coorg.html'">Explore</button>
+        </div>
+        <!-- Manali -->
+        <div class="destination">
+            <img src="manali.jpg" alt="Manali">
+            <h3>Manali</h3>
+            <p>Discover The Adventure Capital of India</p>  
+            <button onclick="window.location.href='manali.html'">Explore</button>
+        </div>
+    </div>
+
+    <script>
+        function searchDestination() {
+            var input = document.getElementById('searchInput').value.trim().toLowerCase();
+
+            // Predefined destination URLs
+            var destinations = {
+                "leh ladakh": "ladakh.html",
+                "coorg": "coorg.html",
+                "manali": "manali.html",
+                "goa": "goa.html",
+                "jaipur": "jaipur.html",
+                "kerala": "kerala.html",
+            };
+
+            // Check if the input matches any destination
+            if (destinations[input]) {
+                window.location.href = destinations[input]; // Redirect to the appropriate page
+            } else {
+                alert("Destination not found! Please try again.");
+            }
+        }
+    </script>
+    <div style="text-align: center; margin: 40px 0;">
+        <button onclick="window.location.href='page2.html'" style="
+            width: 5cm;
+            padding: 5px 12px;
+            font-size: 14px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        ">
+            Next Page (2)
+        </button>
+    </div>
+    
+</body>
+</html>

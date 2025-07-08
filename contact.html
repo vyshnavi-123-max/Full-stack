@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Guide Your Trip</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f3;
+        }
+        header {
+            background: skyblue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .contact-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .team-info, .contact-container {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .team-info h2, .contact-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .team-members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .member {
+            text-align: center;
+            margin: 15px;
+        }
+        .member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .member h4 {
+            margin: 10px 0 5px;
+        }
+        .contact-container form input,
+        .contact-container form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-container form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-container form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guide Your Trip</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="contact-wrapper">
+
+        <!-- Team Information -->
+        <div class="team-info">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="member">
+                    
+                    <h4>Manyasri</h4>
+                    
+                    <p>Email: manyasripatel@gmail.com</p>
+                </div>
+                <div class="member">
+                    
+                    <h4>Vyshnavi</h4>
+                    
+                    <p>Email: vyshnavim@gmail.com</p>
+                </div>
+                <div class="member">
+                    
+                    <h4>Chintu</h4>
+                    
+                    <p>Email: dchintu@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Full Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 Guide Your Trip. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Page 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .featured {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .destination {
+            width: 300px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .destination img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .destination h3 {
+            margin: 10px 0;
+        }
+        .destination p {
+            font-size: 14px;
+            color: #555;
+        }
+        .destination button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .destination button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guide Your Trip</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="featured">
+        <!-- Destination 1 -->
+        <div class="destination">
+            <img src="goa.jpg" alt="Goa">
+            <h3>Goa</h3>
+            <p>Discover The Party Capital of India</p>
+            <button onclick="window.location.href='goa.html'">Explore</button>
+        </div>
+        <!-- Destination 2 -->
+        <div class="destination">
+            <img src="jaipur.jpg" alt="Jaipur">
+            <h3>Jaipur</h3>
+            <p>Discover The Pink City</p>
+            <button onclick="window.location.href='jaipur.html'">Explore</button>
+        </div>
+        <!-- Destination 3 -->
+        <div class="destination">
+            <img src="kerala.jpg" alt="Kerala">
+            <h3>Kerala</h3>
+            <p>God's Own Country</p>
+            <button onclick="window.location.href='kerala.html'">Explore</button>
+        </div>
+        
+
+    <!-- Back to Page 1 Button -->
+    <div style="text-align: center; margin: 40px 0;">
+        <button onclick="window.location.href='home.html'" style="
+            width: 5cm;
+            padding: 5px 12px;
+            font-size: 14px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        ">
+            Back to Page 1
+        </button>
+    </div>
+</body>
+</html>

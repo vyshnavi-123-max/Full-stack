@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Educational video content on various topics." />
+    <title>Learn with Videos</title>
+  </head>
+  <body>
+    <main>
+      <h1>Explore Educational Topics Through Videos</h1>
+      <p>Dive into a curated selection of videos to enhance your understanding of fascinating subjects.</p>
+
+      <section>
+        <h2>History of the Internet</h2>
+        <p>This video explores how the internet was born and evolved over time.</p>
+        <iframe 
+          src="https://www.youtube.com/embed/Dxcc6ycZ73M" 
+          title="History of the Internet" 
+          width="560" 
+          height="315" 
+          allowfullscreen>
+        </iframe>
+      </section>
+
+      <section>
+        <h2>Basics of Quantum Physics</h2>
+        <p>Learn the fundamental principles behind quantum mechanics in this beginner-friendly video.</p>
+        <iframe 
+          src="https://www.youtube.com/embed/scuK-ZQoCkI" 
+          title="Quantum Physics Explained" 
+          width="560" 
+          height="315" 
+          allowfullscreen>
+        </iframe>
+      </section>
+
+      <section>
+        <h2>Introduction to Artificial Intelligence</h2>
+        <p>This video offers a great overview of how AI works and its real-world applications.</p>
+        <iframe 
+          src="https://www.youtube.com/embed/2ePf9rue1Ao" 
+          title="Artificial Intelligence Overview" 
+          width="560" 
+          height="315" 
+          allowfullscreen>
+        </iframe>
+      </section>
+    </main>
+  </body>
+</html>
